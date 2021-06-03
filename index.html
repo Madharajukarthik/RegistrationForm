@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="text">Registration Form</h3><br>
+        <div class="row">
+            <div class="col-md-6">
+                <form method="POST" autocomplete="on" name="google-sheet" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="DateOfBirth">Date of Birth</label>
+                        <input type="date" class="form-control" name="DOB" id="DOB" placeholder="Date of birth" required>
+                    </div><br>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" name="Email" id="Email" aria-describedby="emailHelp" placeholder="email" required>
+                    </div><br>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Father Name</label>
+                      <input type="text" class="form-control" name="FatherName" id="FatherName" placeholder="Father Name" required>
+                    </div><br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <!--JS Link-->
+    <script src="form.js"></script>
+</body>
+</html>
